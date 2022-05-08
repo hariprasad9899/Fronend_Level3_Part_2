@@ -1,0 +1,23 @@
+@media screen and (max-width:850px) {
+    .container {
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+    .phone ,
+    .info{
+        width: 100%;
+    }
+    .phone {
+        order: 1;
+    }
+    .info {
+        order: 2;
+    }
+}
