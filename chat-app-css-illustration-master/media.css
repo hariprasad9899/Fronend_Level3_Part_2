@@ -6,6 +6,9 @@
 
 
 @media screen and (max-width:600px) {
+    .bgOne {
+        width: 80%;
+    }
     .container {
         width: 90%;
         flex-direction: column;
@@ -19,5 +22,7 @@
     }
     .info {
         order: 2;
+        text-align: center;
+        padding: 10px;
     }
 }
