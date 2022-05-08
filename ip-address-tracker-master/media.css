@@ -1,0 +1,35 @@
+@media screen and (max-width:600px) {
+    .input_section {
+        width: 70%;
+    }
+    .ipInfo {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        top:45%;
+    }
+    .info {
+        width: 100%;
+        border: none;
+        padding: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+    }  
+}
+@media screen and (max-width:400px) {
+    .input_section {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .input_section h1 {
+        font-size: 1.2em;
+    }
+    .ipInfo {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        top:45%;
+    }  
+}
