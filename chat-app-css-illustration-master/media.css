@@ -7,10 +7,11 @@
 
 @media screen and (max-width:600px) {
     .bgOne {
-        width: 80%;
+        width: 60%;
+        height: 70%;
     }
     .container {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
     }
     .phone ,
@@ -19,6 +20,10 @@
     }
     .phone {
         order: 1;
+        width:100%;
+    }
+    .innerWrapper {
+        width: 100%;
     }
     .info {
         order: 2;

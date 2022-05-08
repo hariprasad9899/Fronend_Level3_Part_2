@@ -6,7 +6,6 @@
 }
 html,body,main {
     width: 100%;
-    /* height: 100%; */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -41,19 +40,14 @@ main {
     width: 850px;
     margin-top: 50px;
     padding: 10px;
-    /* height: 600px; */
-    /* height: 80%; */
-    /* background-color: #eee; */
     display: flex;
     gap: 30px;
 }
 .phone {
     width: 45%;
-    /* border: 1px solid black; */
 }
 .info {
     width: 55%;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,18 +71,18 @@ main {
     justify-content: center;
 }
 .wrapper {
-    /* height: 95%; */
     width: 90%;
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.241);
     background-color: white;
     display: grid;
     padding: 10px;
+    position: relative;
+    overflow: hidden;
 }
 .innerWrapper {
     margin: auto;
     width: 98%;
-    /* height:93%; */
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -97,7 +91,6 @@ main {
 .contentOne {
     width: 100%;
     padding: 15px;
-    /* height: 90px; */
     border-radius: 15px 15px 7px 7px;
     display: flex;
     align-items: flex-end;
@@ -106,18 +99,14 @@ main {
 }
 .contentOne .infoCard {
     width: 100%;
-    /* height: 60%; */
-    /* background-color: #eee; */
 }
 .contentOne .infoCard .card {
     width: 100%;
-    /* height: 100%; */
     margin: auto;
     display: flex;
     align-items: center;
-    /* background-color: rgb(223, 215, 215); */
 }
-/* .arrow, .user,.userDetails,.dots { height: 100%;} */
+
 .card .arrow {
     width: 10%;
     display: grid;
@@ -329,4 +318,16 @@ main {
     left: 88%;
     transform: translate(-50%,-50%);
     position: absolute;
+}
+.wrapper .topBg {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: -1%;
+    right: 25%;
+    border-radius: 30px;
+    z-index: 3;
+    height: 30px;
+    background-color: white;
+    margin: auto;
 }
