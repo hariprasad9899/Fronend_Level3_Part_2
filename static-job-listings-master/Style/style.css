@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,body,main {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+main {
+    background-color: hsl(180, 52%, 96%);
+    display: flex;
+    flex-direction: column;
+}
+.topBg {
+    width: 100%;
+    height: 130px;
+    background-color: hsl(180, 29%, 50%);
+    background-image: url(../images/bg-header-desktop.svg);
+    background:hsl(180, 29%, 50%) url(../images/bg-header-desktop.svg) top no-repeat;
+    background-size: cover;
+}
+.content {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+.all {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.job {
+    width: 100%;
+    position: relative;
+    max-height: 130px;
+    margin-top: 30px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    border-radius: 4px;
+    border-top: 1px solid rgb(240, 235, 235);
+    border-left: 4px solid hsl(180, 29%, 50%);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+.companyImg {
+    flex-grow: 1;
+    display: flex;
+}   
+.companyInfo {
+    margin-left: 10px;
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+}
+.mySkills {
+    flex-grow: 0;
+}
+.companyImg img {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+}
+.rowOne  {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rowTwo {
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+.rowThree {
+    height: 30%;
+    display: flex;
+}
+.rowOne .title h3 {
+    font-size: 1.2em;
+    color: hsl(180, 29%, 50%);
+}
+.rowOne .extra {
+    display: flex;
+    gap: 10px;
+}
+.extra p {
+    padding: 6px 12px 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    color: white;
+}
+.extra p:first-child {
+    background-color: hsl(180, 29%, 50%);
+}
+.extra p:nth-child(2) {
+    background-color: black;
+}
+.rowTwo h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.rowThree {
+    display: flex;
+}
+.rowThree li {
+    list-style-type: none;
+    font-size: 1em;
+    margin: 5px 5px 5px 5px;
+    color: hsl(180, 8%, 52%);
+}
+.rowThree li:first-child {
+    margin-left: 0px;
+}
+.rowThree li:nth-child(2),
+.rowThree li:nth-child(3) {
+    list-style-type:disc;
+}
+.mySkills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.mySkills p {
+    color: hsl(180, 29%, 50%);
+    margin: 0px 5px 0px 5px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 6px 12px 6px 12px;
+    background-color: hsla(0, 0%, 93%, 0.483);
+}
+.job #mobImg {
+    position: absolute;
+    display: none;
+    width: 50px;
+    height: 50px;
+}

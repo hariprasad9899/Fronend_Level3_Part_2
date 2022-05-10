@@ -1,0 +1,71 @@
+@media screen and (max-width:900px) {
+    .all {
+        width: 95%;
+    }
+    .rowOne .title h3 { 
+        font-size: 1em;
+    }
+    .rowOne .extra p {
+        font-size: 0.8em;
+        padding: 4px 8px 4px 8px;
+        border-radius: 10px;
+    }
+    .rowTwo h2 {
+        font-size: 1.2em;
+    }
+    .rowThree li {
+        font-size: 0.8em;
+        margin: 2px 5px 2px 5px;
+    }
+    .mySkills p {
+        font-size: 0.9em;
+        padding: 4px 8px 4px 8px;
+        border-radius: 2px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .companyImg img {
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+}
+@media screen and (max-width:560px) {
+    .job {
+        flex-direction: column;
+        max-height: none;
+        padding: 20px 20px 10px 20px;
+    }
+    .companyImg {
+        display: none;
+    }
+    .companyInfo {
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid hsl(180, 31%, 95%);
+    }
+    .mySkills {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .rowOne {
+        flex-wrap: wrap;
+    }
+    .companyImg img {
+        width: 30px;
+        height: 30px;
+    }
+    .mySkills p {
+        margin: 15px 3px 0px 3px;
+    }
+    .job #mobImg {
+        top: -25px;
+        left: 20px;
+        display: block;
+    }
+}
