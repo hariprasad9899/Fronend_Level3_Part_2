@@ -46,19 +46,21 @@ main {
     border-left: 4px solid hsl(180, 29%, 50%);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.247);
 }
-
 .companyImg {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    width: 10%;
     display: flex;
 }   
 .companyInfo {
     margin-left: 10px;
-    flex-grow: 6;
+    /* flex-grow: 6; */
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 .mySkills {
-    flex-grow: 0;
+    /* flex-grow: 0; */
+    width: 50%;
 }
 .companyImg img {
     margin: auto;
@@ -82,6 +84,7 @@ main {
 }
 .rowOne .title h3 {
     font-size: 1.2em;
+    font-weight: 400;
     color: hsl(180, 29%, 50%);
 }
 .rowOne .extra {
@@ -139,4 +142,83 @@ main {
     display: none;
     width: 50px;
     height: 50px;
+}
+.mySkills p:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    cursor: pointer;
+}
+main {
+    position: relative;
+}
+.selected {
+    position: absolute;
+    width: 80%;
+    /* height: 70px; */
+    padding: 20px 10px 20px 10px;
+    top: 7%;
+    left: 50%;
+    display: flex;
+    border-radius: 4px;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.268);
+}
+.all:first-child {
+    margin-top: 60px;
+}
+.values {
+    width: 70%;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.clearBtn {
+    width: 30%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.mySkills p {
+    color: hsl(180, 29%, 50%);
+    margin: 0px 5px 0px 5px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 6px 12px 6px 12px;
+    background-color: hsla(0, 0%, 93%, 0.483);
+}
+.tablet {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 93%, 0.483);
+}
+.tablet p {
+    color: hsl(180, 29%, 50%);
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 3px 8px 3px 8px;
+}
+.tablet p:nth-child(2){
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+    padding: 1px 8px 1px 8px;
+    background-color: hsl(180, 29%, 50%);
+}
+.clearBtn p {
+    margin: auto;
+    color: hsl(180, 29%, 50%);
+    text-decoration:underline;
+}
+.clearBtn p:hover {
+    cursor: pointer;
+    color: gray;
 }
