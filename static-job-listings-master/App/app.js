@@ -2,8 +2,19 @@
 let job = document.getElementsByClassName('job')[0];
 let allNode = document.getElementsByClassName('all')[0];
 let clonedJobNode = job.cloneNode(1);
+const selectedSection = document.getElementsByClassName('selected')[0];
+const clear = document.getElementById('clear') 
 
 
+clear.onclick = function() {
+    let allJobs = [...document.getElementsByClassName('openjobs')];
+    let tablets = [...document.getElementsByClassName('tablet')]
+    for(let eachJob of allJobs) {
+        if(!eachJob.classList.contains('spl')) eachJob.style.display = "flex";
+    }
+    for(let eachTab of tablets) eachTab.remove();
+    selectedSection.style.display = "none";
+}
 
 window.onload = function() {
     //method 1
@@ -126,6 +137,7 @@ window.onload = function() {
                 }
             } else if(!eachJob.classList.contains('spl')) {
                 eachJob.style.display = "flex";
+                selectedSection.style.display = "none";
             } 
         }
     }
@@ -133,7 +145,8 @@ window.onload = function() {
 
     function addFilters(val) {
         let addedFilters = appliedFilters();
-        if(addedFilters.indexOf(val) > 0) {
+        console.log(addedFilters,val);
+        if(addedFilters.indexOf(val) >= 0) {
             return 
         } else {
         const values = document.getElementsByClassName('values')[0];
@@ -160,6 +173,7 @@ window.onload = function() {
             let skills = [...mySkills.getElementsByTagName('p')];
             for(let i of skills) {
                 i.addEventListener('click', ()=> {
+                    selectedSection.style.display = "flex";
                     addFilters(i.innerText)
                 })
             }
