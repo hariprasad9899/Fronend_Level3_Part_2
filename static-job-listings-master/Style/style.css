@@ -32,6 +32,7 @@ main {
     width: 80%;
     height: 100%;
     margin: auto;
+    padding-bottom: 80px;
 }
 .job {
     width: 100%;
@@ -102,6 +103,10 @@ main {
 .rowTwo h2 {
     font-size: 1.4em;
     font-weight: 500;
+}
+.rowTwo h2:hover {
+    cursor: pointer;
+    color: hsl(180, 29%, 50%);
 }
 .rowThree {
     display: flex;
