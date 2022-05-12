@@ -75,6 +75,13 @@
         display: block;
     }
     .all:first-child {
-        margin-top: 120px;
+        margin-top: 250px;
+    }
+    .selected {
+        margin-bottom: 30px;
+        max-height: 400px;
+    }
+    .tablet {
+        min-width: 40px;
     }
 }

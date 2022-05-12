@@ -151,6 +151,9 @@ main {
 main {
     position: relative;
 }
+.all:first-child {
+    margin-top: 60px;
+}
 .selected {
     position: absolute;
     width: 80%;
@@ -164,9 +167,7 @@ main {
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.268);
 }
-.all:first-child {
-    margin-top: 60px;
-}
+
 .values {
     width: 70%;
     /* height: 100%; */
@@ -194,24 +195,29 @@ main {
     background-color: hsla(0, 0%, 93%, 0.483);
 }
 .tablet {
+    min-width: 60px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     background-color: hsla(0, 0%, 93%, 0.483);
 }
-.tablet p {
+.tablet p:nth-child(1) {
+    margin-left: 10px;
     color: hsl(180, 29%, 50%);
     font-weight: 600;
-    border-radius: 3px;
-    padding: 3px 8px 3px 8px;
 }
-.tablet p:nth-child(2){
-    font-size: 1.8em;
-    font-weight: 100;
-    color: white;
-    padding: 1px 8px 1px 8px;
+.tablet p:nth-child(2) {
+    width: 30px;
+    font-size:2em;
     background-color: hsl(180, 29%, 50%);
+    text-align: center;
+    color: white;
+}
+.tablet p:nth-child(2):hover {
+    cursor: pointer;
+    background-color: black;
 }
 .clearBtn p {
     margin: auto;
@@ -221,4 +227,4 @@ main {
 .clearBtn p:hover {
     cursor: pointer;
     color: gray;
-}
+} 
